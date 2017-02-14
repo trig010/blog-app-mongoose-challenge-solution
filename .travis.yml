@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: u6ZT1/YvmdTTn63Ec4aAn1hZi0QVQ042L/WGxUDtAFMjIVoJ+AvT/CQ81sR7pvasxK/Uir085auY9Oc0b7sRpdXpS/336OKhULrczt7RDfDUlCWZE9i2jwQuMoGf+zQz/8InFwFJ1Db/BtaJiWh6hYdnI4bi8XR6x0ZvWmUuGi7xjYsBKO6zRb243UPgOg/YlQLS6e/ASYIdOFtvnf9BYA7qYGIFHU1nqaXvLq1IbODT9+BD79gtK1zzfBQi5Y2Hwcw+FTYQPUORcX9XkhR1lVY1njuDj/k1PfumjflU7+ks0iP3B7anzmgpsUrXT5GiJm1jhX9dR/oFv+LFCUcLGJ0xQer53ib6DLpnkYW69e27fNwN1aF8AJjxT8d96ZRXK2h8DS7ufhrGs131VyBJcQ+YXw8Q3YhMPasUiGkzzSYjY5AZCmByPuYICjb9PauF6YFDCr+KNLYFnzuyf9Vs0TxwTvdKsjoR//mH2t98VmgTXgiStnuhS98+P4+ErfmAGsvWU9N2BVC6lWPJeNkItkbhwqvWDLn3Sb5G1ir4jV6eXFqpn1bvBv1jYATh3Pr6uLu6VI6xye7HvjFPDQf/KOdm/NbiPCzdjfpHu/7+pIl+6IcdJWKam9eEnET9povVusatQCXrEliPNh5e0cFo1gOiBrgq2uB4bculj8mVCDk=
+  app: pure-savannah-20885
+  on:
+    repo: trig010/blog-app-mongoose-challenge-solution
