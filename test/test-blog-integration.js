@@ -129,7 +129,7 @@ describe('Blog Post API resource', function() {
           res.body.should.be.a('object');
           res.body.should.include.keys(
               'id', 'author', 'title', 'content', 'created');
-        //   res.body.author.should.equal(newBlogPost.author);
+        //   res.body.author.should.equal(newBlogPost.authorName);
           // cause Mongo should have created id on insertion
           res.body.id.should.not.be.null;
           res.body.title.should.equal(newBlogPost.title);
